@@ -3,6 +3,7 @@ import './App.css';
 import FormComponent from './components/FormComponent';
 import ChartComponent from './components/ChartComponent';
 import PieChart from './components/PieChart';
+import ListComponent from './components/ListComponent';
 
 function App() {
   return (
@@ -15,9 +16,12 @@ function App() {
         </div>
         <div className='col-6 '>
           <PieChart/>
-
         </div>
        
+      </div>
+
+      <div className='row'>
+        <ListComponent/>
       </div>
       
       
