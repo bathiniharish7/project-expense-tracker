@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
+import { useDispatch } from 'react-redux';
+import { add } from '../store/expenseSlice';
 
 function FormComponent({addUserData}) {
-    
-   
-    
+
+
+    const dispatch = useDispatch();
     const [date,setDate] = useState('');
     const [category, setCategory] = useState('Category');
     const [title,setTitle] = useState('')
@@ -104,7 +106,11 @@ function FormComponent({addUserData}) {
                     Amount:amount,
                 }
 
+
+
+                dispatch(add(obj))
                 console.log(obj);
+
                
                
             }}>Submit</button>
