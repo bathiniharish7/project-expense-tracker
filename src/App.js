@@ -8,20 +8,32 @@ import ListComponent from './components/ListComponent';
 function App() {
   return (
     <div className="container">
-
-      <div className='row'>
-
-        <div className='col-6'>
-          <FormComponent/>
+      
+      <div className='row mt-3'>
+        <div className='col-12'>
+          <h1 className='text-center'>EXPENSES TRACKER USING REDUX-TOOLKIT</h1>
         </div>
-        <div className='col-6 '>
-          <PieChart/>
-        </div>
-       
       </div>
 
-      <div className='row'>
-        <ListComponent/>
+
+      <div className='row mt-3'>
+        <div className='col-12 col-md-6'>
+          <FormComponent/>
+        </div>
+        <div className='col-12 mt-2 col-md-6 mt-md-0'>
+          <PieChart/>
+        </div>
+      </div>
+
+
+
+      <div className='row m-5'>
+        <div className='col-12 text-center'>
+          <h1>EXPENSES HISTORY</h1>
+        </div>
+        <div className='col-12 justify-content-center'>
+         <ListComponent/>
+        </div>
       </div>
       
       
