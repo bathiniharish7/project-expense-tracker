@@ -18,15 +18,20 @@ const expenseSlice = createSlice(
                 switch(action.payload.Category)
                 {
                     case 'Food':
-                        state.Food.push(action.payload)
+                        state.Food.push(action.payload);
+                        break;
                     case 'Travel':
-                        state.Travel.push(action.payload) 
+                        state.Travel.push(action.payload);
+                        break;
                     case 'Movies':
-                        state.Movies.push(action.payload)
+                        state.Movies.push(action.payload);
+                        break;
                     case 'Health':
-                        state.Health.push(action.payload)    
+                        state.Health.push(action.payload);
+                        break;    
                     case 'Shopping':
-                        state.Shopping.push(action.payload)
+                        state.Shopping.push(action.payload);
+                        break;
                        
                 }
             }
