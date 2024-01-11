@@ -11,8 +11,8 @@ function App() {
     <div className="container">
       
       <div className='row mt-3 '>
-        <div className='col-12 bg-dark text-light '>
-          <h1 className='text-center '>EXPENSES TRACKER USING REDUX-TOOLKIT</h1>
+        <div className='col-12 ' >
+          <h1 className='text-center bg-dark text-light '>EXPENSES TRACKER USING REDUX-TOOLKIT</h1>
         </div>
       </div>
 
