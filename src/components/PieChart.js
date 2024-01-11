@@ -35,9 +35,9 @@ function PieChart() {
       },
     ],
   };
-
+  const chartTitle ='Expenses Distribution by Category';
   return (
-    <div style={{ height: '60vh', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+    <div style={{ height: '400px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
       <Pie data={data} />
     </div>
   );

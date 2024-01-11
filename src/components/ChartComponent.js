@@ -3,7 +3,6 @@ import React from 'react'
 import { Pie } from 'react-chartjs-2';
 import { Chart as ChartJS } from "chart.js/auto";
 
-
 function ChartComponent() {
     const data = {
         labels: ['Label 1', 'Label 2', 'Label 3'],
@@ -17,7 +16,7 @@ function ChartComponent() {
       };
 
   return (
-    <div style={{height:'100vh'}}>
+    <div style={{height:'100vh'}} id='chart'>
       <Pie data={data} />
     </div>
   )

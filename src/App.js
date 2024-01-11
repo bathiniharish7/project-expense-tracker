@@ -5,13 +5,14 @@ import ChartComponent from './components/ChartComponent';
 import PieChart from './components/PieChart';
 import ListComponent from './components/ListComponent';
 
+
 function App() {
   return (
     <div className="container">
       
-      <div className='row mt-3'>
-        <div className='col-12'>
-          <h1 className='text-center'>EXPENSES TRACKER USING REDUX-TOOLKIT</h1>
+      <div className='row mt-3 '>
+        <div className='col-12 bg-dark text-light '>
+          <h1 className='text-center '>EXPENSES TRACKER USING REDUX-TOOLKIT</h1>
         </div>
       </div>
 
@@ -20,18 +21,20 @@ function App() {
         <div className='col-12 col-md-6'>
           <FormComponent/>
         </div>
-        <div className='col-12 mt-2 col-md-6 mt-md-0'>
-          <PieChart/>
+        <div className='col-12 mt-5 col-md-6 mt-md-0'>
+        <h4 className='text-center m-0 '>Expenses Distribution by Category</h4>
+        <PieChart />
         </div>
       </div>
 
 
 
-      <div className='row m-5'>
+      <div className='row m-3'>
         <div className='col-12 text-center'>
           <h1>EXPENSES HISTORY</h1>
         </div>
         <div className='col-12 justify-content-center'>
+        
          <ListComponent/>
         </div>
       </div>

@@ -17,7 +17,7 @@ function FormComponent({addUserData}) {
   
 
   return (
-    <div className='border  mt-3 p-3' style={{height:'60vh'}}>
+    <div className='border  mt-3 p-3 ' style={{backgroundColor:'pink'}} id='form'>
          <div className='mt-3'>
             <label>Titel</label>
             <input type='text' className='form-control' value={title} onChange={(e)=>{setTitle(e.target.value)}}/>
