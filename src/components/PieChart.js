@@ -1,6 +1,7 @@
 import React from 'react';
 import { Pie } from 'react-chartjs-2';
 import { useSelector } from 'react-redux';
+import { Chart  } from "chart.js/auto";
 
 function PieChart() {
   const pieChartData = useSelector(state => state.expenseSlice);
