@@ -16,7 +16,7 @@ function FormComponent({addUserData}) {
     const [amountError,setAmountError] = useState('');
 
     function handleSubmit(){
-        console.log("OnClicked");
+       
         //Title Validation
         if(title === ""){
             setTitleError("Please enter a title")
@@ -49,7 +49,7 @@ function FormComponent({addUserData}) {
        //calling dispatch only if all fields are filled
         if(title && category!='Category' && amount >0 && date)
         {
-            console.log("Calling dispatch");
+           
            
                const obj = {
                 Title:title,
@@ -59,8 +59,7 @@ function FormComponent({addUserData}) {
                }
 
                dispatch(add(obj));
-               console.log('Object added in Redux Store :');
-               console.log(obj);
+              
         }
      
       
