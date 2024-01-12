@@ -3,8 +3,6 @@ import { useDispatch } from 'react-redux';
 import { add } from '../store/expenseSlice';
 
 function FormComponent({addUserData}) {
-     
-
     const dispatch = useDispatch();
     
     const [date,setDate] = useState('');
@@ -164,7 +162,7 @@ function FormComponent({addUserData}) {
         <div className='mt-3'>
             <button className='btn btn-primary w-100' onClick={()=>{
                handleSubmit();
- 
+
             }}>Submit</button>
         </div>
 

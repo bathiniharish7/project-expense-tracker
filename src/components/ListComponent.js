@@ -7,7 +7,7 @@ function ListComponent() {
 
   return (
     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-      <Table striped bordered hover style={{ width: '80%' }}>
+      <Table striped bordered hover style={{ width: '100%' }}>
         <thead>
           <tr>
             <th>SL.NO</th>

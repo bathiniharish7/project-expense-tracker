@@ -8,7 +8,7 @@ import ListComponent from './components/ListComponent';
 
 function App() {
   return (
-    <div className="container">
+    <div className="container ">
       
       <div className='row mt-3 '>
         <div className='col-12 ' >
