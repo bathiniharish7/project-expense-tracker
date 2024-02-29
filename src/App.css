@@ -1,4 +1,7 @@
 .App {
   text-align: center;
 }
-
+#right{
+  /* background-color: rgb(120, 194, 228); */
+  position: relative;
+}

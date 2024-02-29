@@ -5,6 +5,7 @@ import { Chart  } from "chart.js/auto";
 
 function PieChart() {
   const pieChartData = useSelector(state => state.expenseSlice);
+  console.log("pieChartData",pieChartData.All.length);
 
   const foodTotal = pieChartData.Food.reduce((accumulator, current) => {
     return accumulator + current.Amount;
@@ -36,10 +37,13 @@ function PieChart() {
       },
     ],
   };
+ 
   const chartTitle ='Expenses Distribution by Category';
   return (
     <div style={{ height: '400px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
       <Pie data={data} />
+      
+      
     </div>
   );
 }
