@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch } from 'react-redux';
 import { add } from '../store/expenseSlice';
-
+import "./FormComponent.css"
 function FormComponent({addUserData}) {
     const dispatch = useDispatch();
     
@@ -71,7 +71,12 @@ function FormComponent({addUserData}) {
   
   const error_color='red'
   return (
-    <div className='border  mt-3 p-3 ' style={{backgroundColor:'pink'}} id='form'>
+    <div className='border  mt-3 p-3  form'  id='form'>
+          <div class="row">
+            <div class="col-12 text-center">
+              <h1 class="mx-auto">Expense Details</h1>
+            </div>
+          </div>
          <div className='mt-3'>
             <label>Title</label>
             <input type='text' className='form-control' placeholder='Enter Title'  value={title} onChange={(e)=>{setTitle(e.target.value)}}/>

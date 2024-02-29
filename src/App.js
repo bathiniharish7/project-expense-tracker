@@ -8,22 +8,25 @@ import ListComponent from './components/ListComponent';
 
 function App() {
   return (
+    <>
+    <h1 className='text-center bg-dark text-light w-100 p-3 '>EXPENSES TRACKER USING REDUX-TOOLKIT</h1>
     <div className="container ">
       
-      <div className='row mt-3 '>
+      {/* <div className='row mt-3 '>
         <div className='col-12 ' >
           <h1 className='text-center bg-dark text-light '>EXPENSES TRACKER USING REDUX-TOOLKIT</h1>
         </div>
-      </div>
+      </div> */}
 
 
       <div className='row mt-3'>
         <div className='col-12 col-md-6'>
           <FormComponent/>
         </div>
-        <div className='col-12 mt-5 col-md-6 mt-md-0'>
-        <h4 className='text-center m-0 '>Expenses Distribution by Category</h4>
-        <PieChart />
+        <div className='col-12 mt-5 col-md-6 mt-md-0' id='right'>
+          <h4 className='text-center m-0 '>Expenses Distribution by Category</h4>
+          <PieChart />
+        
         </div>
       </div>
 
@@ -42,6 +45,8 @@ function App() {
       
     
     </div>
+    </>
+   
   );
 }
 

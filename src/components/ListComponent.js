@@ -6,9 +6,9 @@ function ListComponent() {
   const list = useSelector(state => state.expenseSlice.All);
 
   return (
-    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-      <Table striped bordered hover style={{ width: '100%' }}>
-        <thead>
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}} >
+      <table  style={{ width: '100%' }} className='table table-dark' >
+        <thead className=''>
           <tr>
             <th>SL.NO</th>
             <th>Category</th>
@@ -28,7 +28,7 @@ function ListComponent() {
             </tr>
           ))}
         </tbody>
-      </Table>
+      </table>
     </div>
   );
 }
