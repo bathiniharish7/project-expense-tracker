@@ -42,7 +42,11 @@ function App() {
         <div className='col-12 mt-5 col-md-6 mt-md-0' id='right'>
           <h4 className='text-center m-0 '>Expenses Distribution by Category</h4>
           <div className='chart' >
-          <PieChart />
+          {/* <PieChart /> */}
+          <div className='circle'>
+            <h1>Add Expenses</h1>
+            <h1>To Show Graph</h1>
+          </div>
           </div>
          
          

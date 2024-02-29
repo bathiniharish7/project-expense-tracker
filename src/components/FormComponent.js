@@ -93,6 +93,8 @@ function FormComponent({addUserData}) {
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
 
+                id='dropdown'
+               
               >
                 {category}
               </button>
@@ -167,7 +169,7 @@ function FormComponent({addUserData}) {
             <button className='btn btn-primary w-100' onClick={()=>{
                handleSubmit();
 
-            }}>Submit</button>
+            }} id='submit'>Submit</button>
         </div>
 
     </div>

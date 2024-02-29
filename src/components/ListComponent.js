@@ -1,6 +1,7 @@
 import React from 'react';
 import Table from 'react-bootstrap/Table';
 import { useSelector } from 'react-redux';
+import "./ListComponent.css"
 
 function ListComponent() {
   const list = useSelector(state => state.expenseSlice.All);
@@ -17,7 +18,7 @@ function ListComponent() {
             <th>Date</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody >
           {list.map((item, index) => (
             <tr key={index}>
               <td>{index + 1}</td>
