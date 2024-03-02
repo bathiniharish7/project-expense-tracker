@@ -43,10 +43,11 @@ function App() {
           <h4 className='text-center m-0 '>Expenses Distribution by Category</h4>
           <div className='chart' >
           {/* <PieChart /> */}
-          <div className='circle'>
+          {pieChartData.All.length >0 ?<PieChart /> : <div className='circle'>
             <h1>Add Expenses</h1>
             <h1>To Show Graph</h1>
-          </div>
+          </div>}
+         
           </div>
          
          
