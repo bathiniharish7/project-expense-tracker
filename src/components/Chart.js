@@ -32,7 +32,7 @@ function Chart() {
         
         series: [
             {
-                name: 'Access From',
+                name: 'Expense Details',
                 type: 'pie',
                 radius: ['40%', '70%'],
                 avoidLabelOverlap: false,
