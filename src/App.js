@@ -8,6 +8,8 @@ import { useSelector } from 'react-redux';
 import { useEffect, useRef } from 'react';
 import ReactECharts from 'echarts-for-react';
 import Chart from './components/Chart';
+import Chart2 from './components/DummyChart';
+import DummyChart from './components/DummyChart';
 
 function App() {
   const pieChartData = useSelector(state => state.expenseSlice);
@@ -28,15 +30,16 @@ function App() {
         <div className='col-12 col-md-6'>
           <FormComponent/>
         </div>
-        <div className='col-12 mt-5 col-md-6 mt-md-0' id='right'>
-          <h4 className='text-center m-0 '>Expenses Distribution by Category</h4>
+        <div className='col-12 mt-5 col-md-6 mt-md-1 d-flex justify-content-center align-items-center' id='right'>
+        <h4 className='text-center m-0 ' id='heading'>Expenses Distribution by Category</h4>
           <div className='chart' >
         
           {/* {pieChartData.All.length >0 ?<PieChart /> : <div className='circle'>
             <h1>Add Expenses</h1>
             <h1>To Show Graph</h1>
           </div>} */}
-          <Chart/>
+          {/* <Chart/> */}
+          {pieChartData.All.length>0?<Chart/>:<DummyChart/>}
           
          
           </div>

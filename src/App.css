@@ -1,9 +1,7 @@
 .App {
   text-align: center;
 }
-#right{
-  /* background-color: red !important; */
-}
+
 
 .chart{
   /* background-color: aqua; */
@@ -11,20 +9,15 @@
   height: 80%;
   margin: 0 auto;
   margin-top: 10px;
+  
 }
-.circle{
-  background-color: rgb(164, 33, 142);
-  margin: 0 auto;
- width: 35vw;
-height: 35vw;
- border-radius: 50%;
- display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: center;
- color: white;
- border:1px solid black;
- h1{
-  font-size: 3rems
- }
+
+#right{
+  
+  position: relative;
+  #heading{
+    position: absolute;
+    z-index: 20;
+    top: 20px;
+  }
 }

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ReactECharts from 'echarts-for-react';
 import { useSelector } from 'react-redux';
-function Chart() {
+function DummyChart() {
 
     const pieChartData = useSelector(state => state.expenseSlice);
     console.log("pieChartData",pieChartData);
@@ -26,9 +26,6 @@ function Chart() {
 
 
     const option1= {
-        tooltip: {
-            trigger: 'item'
-          },
         
         series: [
             {
@@ -44,7 +41,7 @@ function Chart() {
                 label: {
                     show: true,
                     position: 'outside',
-                    formatter: '{b}:{c}'
+                    formatter: '{b}:'
                 },
                 emphasis: {
                     label: {
@@ -57,9 +54,13 @@ function Chart() {
                     show: true,
                     length: 10
                 },
-                data:  Object.keys(resultObject).map((category)=>{
-                    return {value: resultObject[category] ,name:category}
-                })
+                data: [
+                    { value: 1, name: 'Shopping' },
+                    { value: 1, name: 'Health' },
+                    { value: 1, name: 'Movies' },
+                    { value: 1, name: 'Travel' },
+                    { value: 1, name: 'Food' }
+                ]
             }
         ],
         graphic: [{
@@ -67,7 +68,7 @@ function Chart() {
             left: 'center',
             top: 'middle',
             style: {
-                text: '',
+                text: 'Add Data To Display Chart',
                 textAlign: 'center',
                 fill: '#333',
                 fontSize: 10
@@ -75,48 +76,6 @@ function Chart() {
         }]
     };
 
- 
-    const option2 = {
-        tooltip: {
-          trigger: 'item'
-        },
-        legend: {
-          top: '5%',
-          left: 'center'
-        },
-        series: [
-          {
-            name: 'Access From',
-            type: 'pie',
-            radius: ['40%', '70%'],
-            avoidLabelOverlap: false,
-            padAngle: 5,
-            itemStyle: {
-              borderRadius: 10
-            },
-            label: {
-                show: true,
-                position: 'outside',
-                formatter: '{b}: {c}'
-            },
-            emphasis: {
-              label: {
-                show: true,
-                fontSize: 40,
-                fontWeight: 'bold'
-              }
-            },
-            labelLine: {
-              show: false
-            },
-            data: Object.keys(resultObject).map((category)=>{
-                return {value: resultObject[category] ,name:category}
-            })
-          }
-        ]
-      };
-   
- 
  
     return (
       
@@ -128,4 +87,4 @@ function Chart() {
     );
 }
 
-export default Chart;
+export default DummyChart;
