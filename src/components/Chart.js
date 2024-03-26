@@ -100,16 +100,17 @@ function Chart() {
             // position: 'center'
             show: true,
             position: 'outside',
-            formatter: '{c}',
+            formatter: 'Rs.{c}',
             fontSize:10
           },
         
           emphasis: {
-            label: {
-              show: true,
-              fontSize: 40,
-              fontWeight: 'bold'
-            }
+            // scale: false,
+            // label: {
+            //   show: true,
+            //   fontSize: 40,
+            //   fontWeight: 'bold'
+            // }
           },
           labelLine: {
             show: true,

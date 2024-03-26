@@ -39,7 +39,7 @@ function DummyChart() {
                     borderWidth: 2
                 },
                 label: {
-                    show: true,
+                    show: false,
                     position: 'outside',
                     formatter: '{b}:',
                     fontSize:8
@@ -98,7 +98,8 @@ function DummyChart() {
             },
             label: {
               show: false,
-              position: 'center'
+              position: 'center',
+              formatter:''
             },
             emphasis: {
               label: {
