@@ -27,10 +27,10 @@ function App() {
 
 
       <div className='row mt-3'>
-        <div className='col-12 col-md-6'>
+        <div className='col-12 col-lg-6 '>
           <FormComponent/>
         </div>
-        <div className='col-12 mt-5 col-md-6 mt-md-1 d-flex justify-content-center align-items-center' id='right'>
+        <div className='col-12 mt-5 col-lg-6 mt-md-4 d-flex justify-content-center align-items-center' id='right'>
         <h4 className='text-center m-0 ' id='heading'>Expenses Distribution by Category</h4>
           <div className='chart' >
         

@@ -31,7 +31,7 @@ function DummyChart() {
             {
                 name: 'Access From',
                 type: 'pie',
-                radius: ['40%', '70%'],
+                radius: ['30%', '60%'],
                 avoidLabelOverlap: false,
                 itemStyle: {
                     borderRadius: 10,
@@ -41,7 +41,8 @@ function DummyChart() {
                 label: {
                     show: true,
                     position: 'outside',
-                    formatter: '{b}:'
+                    formatter: '{b}:',
+                    fontSize:8
                 },
                 emphasis: {
                     label: {
@@ -68,7 +69,7 @@ function DummyChart() {
             left: 'center',
             top: 'middle',
             style: {
-                text: 'Add Data To Display Chart',
+                text: 'Add Data',
                 textAlign: 'center',
                 fill: '#333',
                 fontSize: 10
@@ -76,11 +77,66 @@ function DummyChart() {
         }]
     };
 
+    const option2 = {
+        tooltip: {
+          trigger: 'item'
+        },
+        legend: {
+          top: '0%',
+          left: 'center'
+        },
+        series: [
+          {
+            name: 'Access From',
+            type: 'pie',
+            radius: ['40%', '70%'],
+            avoidLabelOverlap: false,
+            itemStyle: {
+              borderRadius: 10,
+              borderColor: '#fff',
+              borderWidth: 2
+            },
+            label: {
+              show: false,
+              position: 'center'
+            },
+            emphasis: {
+              label: {
+                show: true,
+                fontSize: 40,
+                fontWeight: 'bold'
+              }
+            },
+            labelLine: {
+              show: false
+            },
+            data: [
+                { value: 0, name: 'Shopping' },
+                { value: 0, name: 'Health' },
+                { value: 0, name: 'Movies' },
+                { value: 0, name: 'Travel' },
+                { value: 0, name: 'Food' }
+            ]
+          }
+        ],
+        graphic: [{
+            type: 'text',
+            left: 'center',
+            top: 'middle',
+            style: {
+                text: 'Add Data',
+                textAlign: 'center',
+                fill: '#333',
+                fontSize: 14
+            }
+        }]
+      };
+
  
     return (
       
         <ReactECharts
-        option={option1}
+        option={option2}
     />
           
        

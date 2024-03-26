@@ -75,6 +75,55 @@ function Chart() {
         }]
     };
 
+
+    const option3 = {
+      tooltip: {
+        trigger: 'item'
+      },
+      legend: {
+        top: '0%',
+        left: 'center'
+      },
+      series: [
+        {
+          name: 'Expense Details',
+          type: 'pie',
+          radius: ['30%', '60%'],
+          avoidLabelOverlap: false,
+          itemStyle: {
+            borderRadius: 10,
+            borderColor: '#fff',
+            borderWidth: 2
+          },
+          label: {
+            // show: false,
+            // position: 'center'
+            show: true,
+            position: 'outside',
+            formatter: '{c}',
+            fontSize:10
+          },
+        
+          emphasis: {
+            label: {
+              show: true,
+              fontSize: 40,
+              fontWeight: 'bold'
+            }
+          },
+          labelLine: {
+            show: true,
+            length:10
+          },
+          data: Object.keys(resultObject).map((category)=>{
+            return {value: resultObject[category] ,name:category}
+        })
+        }
+      ],
+     
+    };
+
+
  
     const option2 = {
         tooltip: {
@@ -121,7 +170,7 @@ function Chart() {
     return (
       
         <ReactECharts
-        option={option1}
+        option={option3}
     />
           
        
