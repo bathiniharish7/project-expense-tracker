@@ -59,6 +59,17 @@ function FormComponent({addUserData}) {
                }
 
                dispatch(add(obj));
+
+              //  const [date,setDate] = useState('');
+              //  const [category, setCategory] = useState('Category');
+              //  const [title,setTitle] = useState('')
+              //  const [amount,setAmount] = useState();
+               setDate('');
+               setCategory('Category');
+               setTitle('');
+               setAmount('');
+
+
               
         }
      

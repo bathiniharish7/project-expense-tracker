@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux';
 function Chart() {
 
     const pieChartData = useSelector(state => state.expenseSlice);
-    console.log("pieChartData",pieChartData);
+    // console.log("pieChartData",pieChartData);
 
     const resultObject = {};
 
@@ -17,10 +17,10 @@ function Chart() {
         }
     });
     
-    console.log(resultObject);
-    console.log(Object.keys(resultObject).map((category)=>{
-        return {value: resultObject[category] ,name:category}
-    }));
+    // console.log(resultObject);
+    // console.log(Object.keys(resultObject).map((category)=>{
+    //     return {value: resultObject[category] ,name:category}
+    // }));
 
     
 
